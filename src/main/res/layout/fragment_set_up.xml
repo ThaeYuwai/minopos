@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".SetUpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/btn_pannel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <com.cunoraz.gifview.library.GifView
+                    android:id="@+id/gifItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    custom:gif="@drawable/item" />
+                <com.cunoraz.gifview.library.GifView
+                    android:id="@+id/gifCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    custom:gif="@drawable/category" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <com.cunoraz.gifview.library.GifView
+                    android:id="@+id/gifBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    custom:gif="@drawable/brands" />
+                <com.cunoraz.gifview.library.GifView
+                    android:id="@+id/gifUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    custom:gif="@drawable/units" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/item_frame"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

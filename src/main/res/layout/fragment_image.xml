@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    tools:context=".ImageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/itemImage"
+            android:src="@drawable/photo1"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/takePhoto"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Take Photo"
+                android:textAllCaps="false"></Button>
+
+            <Button
+                android:id="@+id/choosePicture"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Choose Picture"
+                android:textAllCaps="false"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

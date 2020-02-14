@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/rc_View"
+           android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Item Name"
+                android:id="@+id/name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Please Choose Color"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:id="@+id/selectedcolor"
+                    android:background="@color/colorAccent"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/color_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:id="@+id/catego_save"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Cancel"
+                    android:layout_weight="1"
+                    android:id="@+id/catego_cancel"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

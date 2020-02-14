@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Item Name"
+                android:id="@+id/name"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Category"
+                android:id="@+id/category"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Brand"
+                android:id="@+id/brand"
+
+                />
+            <Spinner
+                android:id="@+id/unit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Unit"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Use Color"
+                    android:id="@+id/rbtusecolor"
+                    />
+                <RadioButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Use Image"
+                    android:layout_weight="1"
+                    android:id="@+id/rbtuseimage"
+                    />
+            </RadioGroup>
+
+            <FrameLayout
+                android:id="@+id/displayData"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text ="Original Price"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sale Price"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/oprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Original Price"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:id="@+id/sprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sale Price"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_save"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Cancel"
+                    android:id="@+id/btn_cancel"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
